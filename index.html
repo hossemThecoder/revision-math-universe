@@ -4,13 +4,17 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <link rel="shortcut icon" href="https://hossemthecoder.github.io/revision-math-universe/unnamed.png" />  
 
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+	<style>
+	html {
+    margin: 3px;
+}
+	</style>
   </head>
   <body>
-    <h2>Tableau de revision math - physique 2eme science</h2>
+    <h4>Tableau de revision math - physique 2eme science</h4>
 <table class="table striped">
     <thead>
     <tr>
@@ -60,6 +64,11 @@
        function redirect(video, loader, yticon){
 	      $(yticon).hide();
 		 $(loader).show();
+		 var options = {
+                            showTop: true,
+                            timeout: 3000
+                        }
+         //Metro.toast.create("Redirecting...", null, null, "alert", options);
 		 setTimeout(function(){ 
 		 $(loader).hide();
 		 $(yticon).show();
