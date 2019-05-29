@@ -24,24 +24,36 @@
         <td>1</td>
         <td>physique</td>
         <td>Puissance energie electrique</td>
-        <td><button class="button alert"><span class="mif-youtube-play"></span> play</button></td>
+        <td><button onclick="redirect('https://www.youtube.com/watch?v=pjZ-x0CtY5Y&list=PL-ybNPYr-0bV_KHoJEMhROdbbNKdTiTMu', '#loader_1', '#youtube_1')" class="button alert"><span id="loader_1" style="display: none;" class="mif-spinner3 ani-pulse"></span><span id="youtube_1" class="mif-youtube-play"></span> play</button></td>
     </tr>
     <tr>
         <td>2</td>
         <td>chimie</td>
         <td>L'atome l'element chimique</td>
-        <td><button class="button alert"><span class="mif-youtube-play"></span> play</button></td>
+        <td><button onclick="redirect('https://www.youtube.com/watch?v=Ljos45l2w_E&list=PL-ybNPYr-0bUvGSAO_3lLzXm1khEyC4ff', '#loader_2', '#youtube_2')"class="button alert"><span id="loader_2" style="display: none;" class="mif-spinner3 ani-pulse"></span><span id="youtube_2" class="mif-youtube-play"></span> play</button></td>
     </tr>
     <tr>
         <td>3</td>
         <td>math</td>
         <td>Rappel tableau des signes</td>
-        <td><button class="button alert"><span class="mif-youtube-play"></span> play</button></td>
+        <td><button onclick="redirect('https://youtu.be/dXKzwlpoQTs', '#loader_3', '#youtube_3')" class="button alert"><span id="loader_3" style="display: none;" class="mif-spinner3 ani-pulse"></span><span id="youtube_3" class="mif-youtube-play"></span> play</button></td>
     </tr>
     </tbody>
 </table>
     <!-- jQuery first, then Metro UI JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+	<script>
+       function redirect(video, loader, yticon){
+	      $(yticon).hide();
+		 $(loader).show();
+		 setTimeout(function(){ 
+		 $(loader).hide();
+		 $(yticon).show();
+		 window.open(video);
+		 }, 3000);
+		}
+    </script>
+
   </body>
 </html>
