@@ -73,13 +73,13 @@
       ],
       [  
          "math",
-         "fonction derive (coming soon )",
-         "<button onclick='redirect(\"https://www.youtube.com/watch?v=CoG164SYnS8&list=PL-ybNPYr-0bV-abUtlnt19eR3BwwVYGyN\", \"#loader_42\", \"#youtube_42\")' class='button alert'><span id='loader_42' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_42' class='mif-youtube-play'></span> Lire</button>"
+         "fonction derive",
+         "<small class='text-muted'>coming soon.</small>"
       ],
       [  
          "math",
-         "etude de fonctions (coming soon)",
-         "<button onclick='redirect(\"\", \"#loader_43\", \"#youtube_43\")' class='button alert'><span id='loader_43' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_43' class='mif-youtube-play'></span> Lire</button>"
+         "etude de fonctions",
+         "<small class='text-muted'>coming soon.</small>"
       ],
       [  
          "math",
@@ -138,8 +138,8 @@
       ],
       [  
          "physique",
-         "mvt dans un champ electrique (coming soon)",
-         "<button onclick='redirect(\"\", \"#loader_55\", \"#youtube_55\")' class='button alert'><span id='loader_55' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_55' class='mif-youtube-play'></span> Lire</button>"
+         "mvt dans un champ electrique",
+         "<small class='text-muted'>coming soon.</small>"
       ]
    ]
 }
