@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html>
 
@@ -9,93 +8,101 @@
 
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
-	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css" />
+    <link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css" />
 
     <style>
         html {
             margin: 3px;
         }
+        
+        a.disabled {
+            pointer-events: none;
+            cursor: default;
+        }
     </style>
 </head>
 
 <body>
-<aside class="sidebar pos-absolute z-2"
-       data-role="sidebar"
-       data-toggle="#sidebar-toggle-3"
-       id="sb3"
-       data-shift=".shifted-content">
-    <div class="sidebar-header" data-image="sb-bg-1.jpg">
-	<a href="/" class="fg-white sub-action"
-       onclick="Metro.sidebar.close('#sb3'); return false;">
-        <span class="mif-arrow-left mif-2x"></span>
-    </a>
-        <div class="avatar">
-            <img src="unnamed.png">
+    <aside class="sidebar pos-absolute z-2" data-role="sidebar" data-toggle="#sidebar-toggle-3" id="sb3" data-shift=".shifted-content">
+        <div class="sidebar-header" data-image="sb-bg-1.jpg">
+            <a href="/" class="fg-white sub-action" onclick="Metro.sidebar.close('#sb3'); return false;">
+                <span class="mif-arrow-left mif-2x"></span>
+            </a>
+            <div class="avatar">
+                <img src="unnamed.png">
+            </div>
+            <span class="title fg-white">Math-universe</span>
+            <span class="subtitle fg-white">Tableau de revision pour les 2ème et 3ème</span>
         </div>
-        <span class="title fg-white">Math-universe</span>
-        <span class="subtitle fg-white">Tableau de revision pour les 2ème et 3ème</span>
+        <ul class="sidebar-menu">
+            <li class="group-title">Tableau de:</li>
+            <li onclick="tableau('2')"><a id="2"><span class="mif-table icon"></span>2ème année</a></li>
+            <li onclick="tableau('3')"><a id="3"><span class="mif-table icon"></span>3ème année</a></li>
+        </ul>
+    </aside>
+    <div class="shifted-content h-100 p-ab">
+        <div class="app-bar pos-absolute bg-red z-1" data-role="appbar">
+            <button class="app-bar-item c-pointer" id="sidebar-toggle-3">
+                <span class="mif-menu fg-white"></span>
+            </button>
+        </div>
+        <div class="h-100 p-4">
+            <h1 class="text-center">Tableau de revision</h1>
+            <h5 class="text-center">math - physique - chimie</h5>
+            <h3 class="text-center"><kbd id="title">2éme science</kbd></h3>
+            <div class="d-flex flex-justify-center" id="activity">
+                <div data-role="activity" data-type="square" data-style="color"></div>
+            </div>
+            <table id="2eme" class="table striped table-border mt-4" data-role="table" data-rows="-1" data-show-rows-steps="false" data-show-search="false" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="false" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./2eme.json">
+            </table>
+            <table id="3eme" style="display:none;" class="table striped table-border mt-4" data-role="table" data-rows="-1" data-show-rows-steps="false" data-show-search="false" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="false" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./3eme.json">
+            </table>
+        </div>
     </div>
-    <ul class="sidebar-menu">
-	<li class="group-title">Tableau de:</li>
-	    <li id="2" onclick="tableau('2')"><a><span class="mif-table icon"></span>2ème année</a></li>
-        <li id="3" onclick="tableau('3')"><a><span class="mif-table icon"></span>3ème année</a></li>
-    </ul>
-</aside>
-<div class="shifted-content h-100 p-ab">
-    <div class="app-bar pos-absolute bg-red z-1" data-role="appbar">
-        <button class="app-bar-item c-pointer" id="sidebar-toggle-3">
-            <span class="mif-menu fg-white"></span>
-        </button>
-    </div>
-	<div class="h-100 p-4">
-    <h1 class="text-center">Tableau de revision</h1>
-    <h5 class="text-center">math - physique - chimie</h5>
-    <h3 class="text-center"><kbd id="title">2éme science</kbd></h3>
-	<div class="d-flex flex-justify-center" id="activity">
-        <div data-role="activity" data-type="square" data-style="color"></div>
-    </div>
-    <table id="2eme" class="table striped table-border mt-4" data-role="table" data-rows="-1" data-show-rows-steps="false" data-show-search="false" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="false" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./2eme.json">
-    </table>
-    <table id="3eme" style="display:none;" class="table striped table-border mt-4" data-role="table" data-rows="-1" data-show-rows-steps="false" data-show-search="false" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="false" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./3eme.json">
-    </table>	
-	    </div>
-</div>
 
     <!-- jQuery first, then Metro UI JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script>
-	function animate1(animationName1, animationName2, id1, id2) {
-    var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
-    $(id1).addClass(animationName1).one(animationend, function() {
-          $(id1).hide();
-        $(id1).removeClass(animationName1);  $(id2).show();
-    });
-	
-	$(id2).addClass(animationName2).one(animationend, function() {
-         
-        $(id2).removeClass(animationName2);
-    });
-}
-	function tableau(tab){
-	
+        function animate1(animationName1, animationName2, id1, id2) {
+            var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+            $(id1).addClass(animationName1).one(animationend, function() {
+                $(id1).hide();
+                $(id1).removeClass(animationName1);
+                $(id2).show();
+            });
 
-	if (tab == "2"){
-	setTimeout(function() {
-    $("#title").text("2éme science");
-	animate1("animated fadeOut", "animated fadeInRight", "#3eme", "#2eme");
+            $(id2).addClass(animationName2).one(animationend, function() {
 
-	}, 500);
+                $(id2).removeClass(animationName2);
+            });
+        }
 
-	} else {
-	setTimeout(function() {
-	$("#title").text("3éme science");
-	animate1("animated fadeOut", "animated fadeInRight", "#2eme", "#3eme");
+        function tableau(tab) {
 
-	}, 500);
+            if (tab == "2") {
+                if (document.getElementById("title").textContent == "2éme science") {
+                    return false;
+                }
+                setTimeout(function() {
+                    $("#title").text("2éme science");
+                    animate1("animated fadeOut", "animated fadeInRight", "#3eme", "#2eme");
 
-	}
-	}
+                }, 500);
+
+            } else {
+                setTimeout(function() {
+                    if (document.getElementById("title").textContent == "3éme science") {
+                        return false;
+                    }
+                    $("#title").text("3éme science");
+                    animate1("animated fadeOut", "animated fadeInRight", "#2eme", "#3eme");
+
+                }, 500);
+
+            }
+        }
+
         function redirect(video, loader, yticon) {
             $(yticon).hide();
             $(loader).show();
@@ -110,12 +117,12 @@
                 window.open(video);
             }, 3000);
         }
-		setTimeout(function() {
-                Metro.sidebar.open('#sb3');
-            }, 2000);
-	$( document ).ready(function() {	
-    document.body.style.zoom = "90%";
- });	
+        setTimeout(function() {
+            Metro.sidebar.open('#sb3');
+        }, 2000);
+        $(document).ready(function() {
+            document.body.style.zoom = "90%";
+        });
     </script>
 
 </body>
