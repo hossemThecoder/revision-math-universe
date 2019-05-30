@@ -28,7 +28,7 @@
       ],
       [  
          "math",
-         "generalité sur les fonction",
+         "généralité sur les fonctions",
          "<button onclick='redirect(\"https://www.youtube.com/watch?v=NtfXvRXImkc&list=PL-ybNPYr-0bXCb9bnUrN5Ec4Hu-mkLppF\", \"#loader_33\", \"#youtube_33\")' class='button alert'><span id='loader_33' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_33' class='mif-youtube-play'></span> Lire</button>"
       ],
       [  
