@@ -23,12 +23,12 @@
    "data":[  
       [  
          "physique",
-         "Puissance energie electrique",
+         "Puissance énergie electrique",
          "<button onclick='redirect(\"https://www.youtube.com/watch?v=pjZ-x0CtY5Y&amp;list=PL-ybNPYr-0bV_KHoJEMhROdbbNKdTiTMu\", \"#loader_1\", \"#youtube_1\")' class='button alert'><span id='loader_1' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_1' class='mif-youtube-play'></span> Lire</button>"
       ],
       [  
          "chimie",
-         "L'atome l'element chimique",
+         "L'atome l'élément chimique",
          "<button onclick='redirect(\"https://www.youtube.com/watch?v=Ljos45l2w_E&list=PL-ybNPYr-0bUvGSAO_3lLzXm1khEyC4ff\", \"#loader_2\", \"#youtube_2\")' class='button alert'><span id='loader_2' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_2' class='mif-youtube-play'></span> Lire</button>"
       ],
       [  
@@ -43,12 +43,12 @@
       ],
       [  
          "math",
-         "Equation premier degre",
+         "Equation premier degré",
          "<button onclick='redirect(\"https://youtu.be/flBZ4wqQIu4\", \"#loader_5\", \"#youtube_5\")' class='button alert'><span id='loader_5' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_5' class='mif-youtube-play'></span> Lire</button>"
       ],
       [  
          "math",
-         "Equation second degre",
+         "Equation second degré",
          "<button onclick='redirect(\"https://www.youtube.com/watch?v=WMb58H5C1xk&list=PL-ybNPYr-0bV09ZA4zrPf8NfOb6voc8ZG\", \"#loader_6\", \"#youtube_6\")' class='button alert'><span id='loader_6' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_6' class='mif-youtube-play'></span> Lire</button>"
       ],
       [  
