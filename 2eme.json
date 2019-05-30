@@ -1,0 +1,180 @@
+{  
+   "header":[  
+      {  
+         "name":"matiere",
+         "title":"<span class='mif-lab'></span> Matiere",
+         "sortable":false,
+         "size":100
+      },
+      {  
+         "name":"lesson",
+         "title":"<span class='mif-open-book'></span> Lesson",
+         "sortable":false,
+         "size":80
+      },
+      {  
+         "name":"lien",
+         "title":"Lien vers <span class='mif-youtube2'></span>",
+         "sortable":false,
+         "size":100,
+         "show":true
+      }
+   ],
+   "data":[  
+      [  
+         "physique",
+         "Puissance energie electrique",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=pjZ-x0CtY5Y&amp;list=PL-ybNPYr-0bV_KHoJEMhROdbbNKdTiTMu\", \"#loader_1\", \"#youtube_1\")' class='button alert'><span id='loader_1' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_1' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "chimie",
+         "L'atome l'element chimique",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=Ljos45l2w_E&list=PL-ybNPYr-0bUvGSAO_3lLzXm1khEyC4ff\", \"#loader_2\", \"#youtube_2\")' class='button alert'><span id='loader_2' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_2' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Conditions d'existence des équations",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=LGRnHRRMkhg\", \"#loader_3\", \"#youtube_3\")' class='button alert'><span id='loader_3' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_3' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Rappel tableau des signes",
+         "<button onclick='redirect(\"https://youtu.be/dXKzwlpoQTs\", \"#loader_4\", \"#youtube_4\")' class='button alert'><span id='loader_4' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_4' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Equation premier degre",
+         "<button onclick='redirect(\"https://youtu.be/flBZ4wqQIu4\", \"#loader_5\", \"#youtube_5\")' class='button alert'><span id='loader_5' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_5' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Equation second degre",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=WMb58H5C1xk&list=PL-ybNPYr-0bV09ZA4zrPf8NfOb6voc8ZG\", \"#loader_6\", \"#youtube_6\")' class='button alert'><span id='loader_6' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_6' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "CONDUCTIBILITE ELECTRIQUE",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=H5cUmph9JP8&list=PL-ybNPYr-0bVHKlSdst8kxrhDtx_oi9BY\", \"#loader_7\", \"#youtube_7\")' class='button alert'><span id='loader_7' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_7' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Notion de polynômes",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=frDdOk7cxmg&list=PL-ybNPYr-0bWrGMM3zXdwEc4ln0XP44QO\", \"#loader_8\", \"#youtube_8\")' class='button alert'><span id='loader_8' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_8' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Arithmétique",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=9khh4yNNwQw&list=PL-ybNPYr-0bXPhoVzs-7xWe9GZFDi2h8n\", \"#loader_9\", \"#youtube_9\")' class='button alert'><span id='loader_9' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_9' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Barycentre ( video 1 et 2 )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=jkr0LD5ReWs&list=PL-ybNPYr-0bUjxlenjNocRE8RqmB5Sffh\", \"#loader_10\", \"#youtube_10\")' class='button alert'><span id='loader_10' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_10' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Barycentre ( video 3 et 4 )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=jkr0LD5ReWs&list=PL-ybNPYr-0bUjxlenjNocRE8RqmB5Sffh\", \"#loader_11\", \"#youtube_11\")' class='button alert'><span id='loader_11' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_11' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "Recepteur passif",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=H5cUmph9JP8&list=PL-ybNPYr-0bV60M9dDbvyk_u8MZmyK04Z\", \"#loader_12\", \"#youtube_12\")' class='button alert'><span id='loader_12' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_12' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Translations",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=IvTOemMukns&list=PL-ybNPYr-0bW8NEF9ARLmscMoCCXMaVyC\", \"#loader_13\", \"#youtube_13\")' class='button alert'><span id='loader_13' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_13' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "Loi de pouillet",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=iP5Zdg3Y_Fg&list=PL-ybNPYr-0bVWiu6TDDk2yKIoQ_vq5eBY\", \"#loader_14\", \"#youtube_14\")' class='button alert'><span id='loader_14' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_14' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "Courant alternatif",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=KBtNpixLirc&list=PL-ybNPYr-0bW6bpvseHpaDnAcMsjGc5aW\", \"#loader_15\", \"#youtube_15\")' class='button alert'><span id='loader_15' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_15' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Homothéties",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=YNpCRk4h3KM&list=PL-ybNPYr-0bUKEYraR17CcX93VsXUJV9U\", \"#loader_16\", \"#youtube_16\")' class='button alert'><span id='loader_16' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_16' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "Recepteur actif",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=nsXr6pp5BBA&list=PL-ybNPYr-0bVm1HjGwfAQUR-5k1y8iBFY\", \"#loader_17\", \"#youtube_17\")' class='button alert'><span id='loader_17' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_17' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "chimie",
+         "les electrolytes",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=Z4u6ds8eGSI&list=PL-ybNPYr-0bVA2eFDYniK58pVEpoozzYK\", \"#loader_18\", \"#youtube_18\")' class='button alert'><span id='loader_18' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_18' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "chimie",
+         "acide et base et ph",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=F0N3lo-p81g&list=PL-ybNPYr-0bVwuFOi3XW07futOlgK_Vsf\", \"#loader_19\", \"#youtube_19\")' class='button alert'><span id='loader_19' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_19' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Suites arithmétiques",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=rEDV_8DHpi0&list=PL-ybNPYr-0bVHoqV0nggA67kbQnWoVeIb\", \"#loader_20\", \"#youtube_20\")' class='button alert'><span id='loader_20' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_20' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Suites géométriques",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=MwRmrF-CrrY&list=PL-ybNPYr-0bWeP-ldMJPxEjPulqpmNk4s\", \"#loader_21\", \"#youtube_21\")' class='button alert'><span id='loader_21' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_21' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "Generateur",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=I-nbyR-iwIw&list=PL-ybNPYr-0bWqn3tRo_Oqq-HVd_7NKPiG\", \"#loader_22\", \"#youtube_22\")' class='button alert'><span id='loader_22' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_22' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Rotations",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=b0SY3TfDfrA&list=PL-ybNPYr-0bX3ikKoA5_fjBG4Ubh6qh6V\", \"#loader_23\", \"#youtube_23\")' class='button alert'><span id='loader_23' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_23' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Trigonométrie ( vid 1 et 2 )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=N4c9JYY_HPc&list=PL-ybNPYr-0bV6Z1N7oO3UFdffl2skvLge\", \"#loader_24\", \"#youtube_24\")' class='button alert'><span id='loader_24' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_24' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Trigonométrie ( vid 3,4 et 5 )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=N4c9JYY_HPc&list=PL-ybNPYr-0bV6Z1N7oO3UFdffl2skvLge\", \"#loader_25\", \"#youtube_25\")' class='button alert'><span id='loader_25' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_25' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "chimie",
+         "hydrocarbures ( nomenclature )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=hJEfMLyE2KA\", \"#loader_26\", \"#youtube_26\")' class='button alert'><span id='loader_26' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_26' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Généralités sur les fonctions",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=tOWiFAwpHSc&list=PL-ybNPYr-0bUOT7dyJyZ2_aN3K1gaBWma\", \"#loader_27\", \"#youtube_27\")' class='button alert'><span id='loader_27' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_27' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Géométrie analytique",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=kY7vwGZrhbY&list=PL-ybNPYr-0bUguL4zZ_Z_kwBW753C4uAI\", \"#loader_28\", \"#youtube_28\")' class='button alert'><span id='loader_28' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_28' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "physique",
+         "mouvement",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=Re_oh6Ddv2o&list=PL-ybNPYr-0bWObLy4eaKqSiRzdULJgo5O\", \"#loader_29\", \"#youtube_29\")' class='button alert'><span id='loader_29' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_29' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Fonctions de références ( vid 1 et 2 )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=L7gAsktX3gw&list=PL-ybNPYr-0bVjlsiMg8jeFZqH_Vkd9AEW\", \"#loader_30\", \"#youtube_30\")' class='button alert'><span id='loader_30' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_30' class='mif-youtube-play'></span> Lire</button>"
+      ],
+      [  
+         "math",
+         "Fonctions de références ( vid 3 et 4 )",
+         "<button onclick='redirect(\"https://www.youtube.com/watch?v=L7gAsktX3gw&list=PL-ybNPYr-0bVjlsiMg8jeFZqH_Vkd9AEW\", \"#loader_31\", \"#youtube_31\")' class='button alert'><span id='loader_31' style='display: none;' class='mif-spinner3 ani-pulse'></span><span id='youtube_31' class='mif-youtube-play'></span> Lire</button>"
+      ]
+   ]
+}
