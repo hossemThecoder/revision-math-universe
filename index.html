@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 
@@ -8,6 +9,8 @@
 
     <!-- Metro 4 -->
     <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+	<link rel="stylesheet" href="https://daneden.github.io/animate.css/animate.min.css" />
+
     <style>
         html {
             margin: 3px;
@@ -30,12 +33,12 @@
             <img src="unnamed.png">
         </div>
         <span class="title fg-white">Math-universe</span>
-        <span class="subtitle fg-white">Tableau de revision pour les 2eme et 3eme</span>
+        <span class="subtitle fg-white">Tableau de revision pour les 2ème et 3ème</span>
     </div>
     <ul class="sidebar-menu">
 	<li class="group-title">Tableau de:</li>
-        <li><a><span class="mif-table icon"></span>3eme année</a></li>
-        <li><a><span class="mif-table icon"></span>2eme année</a></li>
+	    <li id="2" onclick="tableau('2')"><a><span class="mif-table icon"></span>2ème année</a></li>
+        <li id="3" onclick="tableau('3')"><a><span class="mif-table icon"></span>3ème année</a></li>
     </ul>
 </aside>
 <div class="shifted-content h-100 p-ab">
@@ -51,8 +54,10 @@
 	<div class="d-flex flex-justify-center" id="activity">
         <div data-role="activity" data-type="square" data-style="color"></div>
     </div>
-    <table class="table striped table-border mt-4" data-role="table" data-show-rows-steps="false" data-show-search="true" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="true" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./table.json">
+    <table id="2eme" class="table striped table-border mt-4" data-role="table" data-rows="-1" data-show-rows-steps="false" data-show-search="false" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="false" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./2eme.json">
     </table>
+    <table id="3eme" style="display:none;" class="table striped table-border mt-4" data-role="table" data-rows="-1" data-show-rows-steps="false" data-show-search="false" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="false" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./3eme.json">
+    </table>	
 	    </div>
 </div>
 
@@ -60,6 +65,36 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script>
+	function animate1(animationName1, animationName2, id1, id2) {
+    var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+    $(id1).addClass(animationName1).one(animationend, function() {
+          $(id1).hide();
+        $(id1).removeClass(animationName1);  $(id2).show();
+    });
+	
+	$(id2).addClass(animationName2).one(animationend, function() {
+         
+        $(id2).removeClass(animationName2);
+    });
+}
+	function tableau(tab){
+	
+
+	if (tab == "2"){
+	setTimeout(function() {
+
+	animate1("animated fadeOut", "animated fadeInRight", "#3eme", "#2eme");
+
+	}, 500);
+
+	} else {
+	setTimeout(function() {
+	animate1("animated fadeOut", "animated fadeInRight", "#2eme", "#3eme");
+
+	}, 500);
+
+	}
+	}
         function redirect(video, loader, yticon) {
             $(yticon).hide();
             $(loader).show();
@@ -77,12 +112,8 @@
 		setTimeout(function() {
                 Metro.sidebar.open('#sb3');
             }, 2000);
-	$( document ).ready(function() {      
-    var isMobile = window.matchMedia("only screen and (max-width: 760px)").matches;
-
-    if (isMobile == false) {
-        document.body.style.zoom = "90%";
-    }
+	$( document ).ready(function() {	
+    document.body.style.zoom = "90%";
  });	
     </script>
 
