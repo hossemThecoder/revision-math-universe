@@ -19,7 +19,10 @@
     <h1 class="text-center">Tableau de revision</h1>
     <h5 class="text-center">math - physique - chimie</h5>
     <h3 class="text-center"><kbd>2éme science</kbd></h3>
-    <table class="table striped table-border mt-4" data-role="table" data-show-rows-steps="false" data-show-search="true" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="true" data-show-table-info="false" data-on-data-loaded="" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./table.json">
+	<div class="d-flex flex-justify-center" id="activity">
+        <div data-role="activity" data-type="square" data-style="color"></div>
+    </div>
+    <table class="table striped table-border mt-4" data-role="table" data-show-rows-steps="false" data-show-search="true" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="true" data-show-table-info="false" data-on-data-loaded="$('#activity').remove()" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./table.json">
     </table>
 
     <!-- jQuery first, then Metro UI JS -->
