@@ -50,7 +50,7 @@
 	<div class="h-100 p-4">
     <h1 class="text-center">Tableau de revision</h1>
     <h5 class="text-center">math - physique - chimie</h5>
-    <h3 class="text-center"><kbd>2éme science</kbd></h3>
+    <h3 class="text-center"><kbd id="title">2éme science</kbd></h3>
 	<div class="d-flex flex-justify-center" id="activity">
         <div data-role="activity" data-type="square" data-style="color"></div>
     </div>
@@ -82,13 +82,14 @@
 
 	if (tab == "2"){
 	setTimeout(function() {
-
+    $("#title").text("2éme science");
 	animate1("animated fadeOut", "animated fadeInRight", "#3eme", "#2eme");
 
 	}, 500);
 
 	} else {
 	setTimeout(function() {
+	$("#title").text("3éme science");
 	animate1("animated fadeOut", "animated fadeInRight", "#2eme", "#3eme");
 
 	}, 500);
