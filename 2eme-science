@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- Metro 4 -->
+    <link rel="stylesheet" href="https://cdn.metroui.org.ua/v4/css/metro-all.min.css">
+    <style>
+        html {
+            margin: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="text-center">Tableau de revision</h1>
+    <h5 class="text-center">math - physique - chimie</h5>
+    <h3 class="text-center"><kbd>2éme science</kbd></h3>
+    <table class="table striped table-border mt-4" data-role="table" data-show-rows-steps="false" data-show-search="true" data-show-activity="true" data-activity-type="square" data-activity-style="color" data-activity-timeout="1000" data-cell-wrapper="false" data-table-search-title="recherche:" data-show-pagination="true" data-show-table-info="false" data-on-data-loaded="" data-rownum="true" data-pagination-next-title="suivant" data-search-threshold="1000" data-rownum-title="<span class='mif-calendar'></span> Jour" data-source="./table.json">
+    </table>
+
+    <!-- jQuery first, then Metro UI JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
+    <script>
+        function redirect(video, loader, yticon) {
+            $(yticon).hide();
+            $(loader).show();
+            var options = {
+                    showTop: true,
+                    timeout: 3000
+                }
+                //Metro.toast.create("Redirecting...", null, null, "alert", options);
+            setTimeout(function() {
+                $(loader).hide();
+                $(yticon).show();
+                window.open(video);
+            }, 3000);
+        }
+    </script>
+
+</body>
+
+</html>
