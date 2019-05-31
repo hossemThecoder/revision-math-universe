@@ -85,18 +85,18 @@
         function tableau(tab) {
 
             if (tab == "2") {
-                if (document.getElementById("title").textContent == "2ème année") {
+                if (document.getElementById("title").textContent == "2ème Année") {
                     return false;
                 }
                 setTimeout(function() {
-                    $("#title").text("2ème année");
+                    $("#title").text("2ème Année");
                     animate1("animated fadeOut", "animated fadeInRight", "#3eme", "#2eme");
 
                 }, 500);
 
             } else {
                 setTimeout(function() {
-                    if (document.getElementById("title").textContent == "3ème année") {
+                    if (document.getElementById("title").textContent == "3ème Année") {
                         return false;
                     }
                     $("#title").text("3ème Année");
