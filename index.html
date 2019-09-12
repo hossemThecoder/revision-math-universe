@@ -41,6 +41,7 @@
         </div>
         <ul class="sidebar-menu">
             <li class="group-title">Tableau de:</li>
+            <li onclick="openInNewTab('https://www.youtube.com/channel/UCNOC-kBYTm9I3G4sfo9pPIg/playlists?view=50&sort=dd&shelf_id=4');"><a id="1"><span class="mif-table icon"></span>2ème année</a></li>
             <li onclick="tableau('2')"><a id="2"><span class="mif-table icon"></span>2ème année</a></li>
             <li onclick="tableau('3')"><a id="3"><span class="mif-table icon"></span>3ème année</a></li>
         </ul>
@@ -70,6 +71,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdn.metroui.org.ua/v4/js/metro.min.js"></script>
     <script>
+        function openInNewTab(url) {
+  var win = window.open(url, '_blank');
+  win.focus();
+}
         function animate1(animationName1, animationName2, id1, id2) {
             var animationend = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
             $(id1).addClass(animationName1).one(animationend, function() {
